@@ -11,15 +11,15 @@ class FgilPalindromeTest < Minitest::Test
   end
 
   def test_mixed_case_palindrome
-    assert "Racecar".palindrome?
+    assert "RaceCar".palindrome?
   end
 
   def test_palindrome_with_punctuation
-    assert "Madam, I'am Adam.".palindrome?
+    assert "Madam, I'm Adam.".palindrome?
   end
 
-  def test_letters
-    assert "Madam, I'am Adam.".letters == "Madam"
-  end
+  # def test_letters
+  #   assert_equal "MadamImAdam", "Madam, I'm Adam.".letters
+  # end
 
 end
